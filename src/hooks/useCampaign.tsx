@@ -3,7 +3,7 @@ import { useCallback } from "react";
 const useCampaign = () => {
   const getCampaignById = useCallback(async (id: string) => {
     try {
-      const res = await fetch(`http://localhost:5001/campaign/${id}`);
+      const res = await fetch(`https://inbox-peak.cyclic.app/campaign/${id}`);
       const data = await res.json();
       console.log(data);
       return data;
