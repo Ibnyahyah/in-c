@@ -88,12 +88,12 @@ const CampaignId: React.FC<CampaignIdProps> = () => {
         >
           <CustomChart
             color="green"
-            value={campaign.recipient_left.percentage.toFixed(2)}
+            value={campaign.recipient_left.percentage}
             header="Recipients Reached"
           />
           <CustomChart
             color="orange"
-            value={campaign.recipient_reached.percentage.toFixed(2)}
+            value={campaign.recipient_reached.percentage}
             header="Recipients Left"
           />
         </SimpleGrid>
@@ -106,7 +106,7 @@ const CampaignId: React.FC<CampaignIdProps> = () => {
             <CustomChart
               color="blue"
               header=""
-              value={campaign.campaign_score.percentage.toFixed(2)}
+              value={campaign.campaign_score.percentage}
             />
           </Card>
         </Card.Section>

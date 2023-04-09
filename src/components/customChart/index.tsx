@@ -17,7 +17,7 @@ function CustomChart({ value, color, header }: PropsType) {
         sections={[{ value: value, color: color }]}
         label={
           <Center>
-            <h2 className="font-bold text-[25px]">{value}%</h2>
+            <h2 className="font-bold text-[25px]">{value.toFixed(2)}%</h2>
           </Center>
         }
       />
