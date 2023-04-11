@@ -24,7 +24,8 @@ const sendRequest = async (
       options.body = JSON.stringify(payload);
     }
     const response = await fetch(
-      `https://inbox-peak.cyclic.app/${route}`,
+      `http://localhost:5001/${route}`,
+      // `https://inbox-peak.cyclic.app/${route}`,
       options
     );
     const data = await response.json();

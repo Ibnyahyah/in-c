@@ -100,7 +100,7 @@ const CampaignId: React.FC<CampaignIdProps> = () => {
                 </div>
 
                 <div className="flex justify-between items-center">
-                  <h2 className="font-bold text-[30px] mt-4 text-[#10b981]">
+                  <h2 className="font-bold text-[30px] mt-4 text-[#10c581]">
                     {value}%
                   </h2>
                   <p className="font-[400] text-[15px] mt-3 bg-slate-200 rounded-[20px] px-2 text-center flex items-center gap-1">

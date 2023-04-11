@@ -20,7 +20,7 @@ export default function Home() {
     setLoading(true);
     getCampaignById(campaignID)
       .then((res) => {
-        if (res.message == "campaign not found") return;
+        if (res?.message == "campaign not found") return;
         setLoading(false);
         router.push(`campaign-information/${campaignID}`);
       })
